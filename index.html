@@ -1,164 +1,146 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHSHA Software Consultancy Inc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+    <header>
+        <div class="logo">
+            <h1>SHSHA Software Consultancy</h1>
+            <p>IT Training & Consulting Firm</p>
+        </div>
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #1a1a1a;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-.logo h1 { font-size: 20px; }
-.logo p  { font-size: 13px; }
+        <nav id="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* NAVIGATION */
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
+    <section id="home" class="section">
+        <h2>Welcome to SHSHA Software Consultancy</h2>
+        <p>Your trusted partner in IT consulting. We help businesses optimize their IT infrastructure and achieve greater efficiency.</p>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        <div class="attributes">
+            <div class="attribute"><h3>Simple</h3><p>We provide straightforward solutions that are easy to implement and use.</p></div>
+            <div class="attribute"><h3>Scalable</h3><p>Our solutions grow with your business.</p></div>
+            <div class="attribute"><h3>Sensible</h3><p>We focus on practical, effective solutions.</p></div>
+            <div class="attribute"><h3>Trustable</h3><p>Trusted for transparency and reliability.</p></div>
+            <div class="attribute"><h3>Reliable</h3><p>Committed to long-term success.</p></div>
+        </div>
+    </section>
 
-/* MOBILE MENU BUTTON */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 28px;
-}
+    <section id="about" class="content">
+        <h2>About Us</h2>
 
-/* SECTIONS */
-.section, .content {
-    padding: 40px 20px;
-}
+        <div class="content-grid">
+            <img src="b.jpg" alt="SHSHA Soft Cons Inc" class="responsive-img">
 
-/* ABOUT SECTION GRID */
-.content-grid {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
+            <div>
+                <p>At SHSHA Soft Cons Inc, we specialize in providing expert IT consulting services...</p><br>
+                <p>SHSHA Consulting is also a leading name in IT Training, Placement...</p><br>
+                <p>At SHSHA, we believe that building a successful career is a journey...</p>
+            </div>
+        </div>
+    </section>
 
-.responsive-img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 8px;
-}
+    <section id="services" class="section1">
+        <h2>Our Services</h2>
+        <ul class="services-list">
+            <li>IT Infrastructure Consulting</li>
+            <li>IT Services and Solutions</li>
+            <li>Cybersecurity & Risk Management</li>
+            <li>Software Development & Integration</li>
+            <li>Data Analytics and IT Strategy</li>
+            <li>Web Development</li>
+            <li>Software and Hardware Diagnostics</li>
+            <li>Certification Training</li>
+        </ul>
+    </section>
 
-/* ATTRIBUTES GRID */
-.attributes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+    <section id="team" class="section">
+        <h2>Our Team</h2>
+        <div class="team-members">
 
-.attribute {
-    flex: 1 1 200px;
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 6px;
-}
+            <div class="team-member">
+                <img src="Munieb_Headshot.jpg" alt="Ahmed Sheikh" class="team-photo">
+                <p><strong>Ahmed Sheikh</strong></p>
+                <p>CEO</p>
+                <p>Certified Instructor</p>
+            </div>
 
-/* TEAM SECTION */
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
-}
+            <div class="team-member">
+                <img src="Rakesh.jpg" alt="Rakesh Khamkar" class="team-photo">
+                <p><strong>Rakesh Khamkar</strong></p>
+                <p>Senior IT Consultant</p>
+                <p>Certified Instructor</p>
+            </div>
 
-.team-member {
-    text-align: center;
-    flex: 1 1 180px;
-}
+            <div class="team-member">
+                <img src="ammar.jpg" alt="Ahmed Ammar" class="team-photo">
+                <p><strong>Ahmed Ammar</strong></p>
+                <p>Technical Program Manager</p>
+                <p>Certified Instructor</p>
+            </div>
 
-.team-photo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-}
+            <div class="team-member">
+                <img src="haseeb.jpg" alt="Muhammad Haseeb" class="team-photo">
+                <p><strong>Muhammad Haseeb</strong></p>
+                <p>Web Developer</p>
+                <p>Certified Instructor</p>
+            </div>
 
-/* CONTACT FORM */
-form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+            <div class="team-member">
+                <img src="ria.jpg" alt="Ria" class="team-photo">
+                <p><strong>Ria Sharma</strong></p>
+                <p>Associate</p>
+            </div>
 
-input, textarea, button {
-    padding: 10px;
-    font-size: 16px;
-}
+        </div>
+    </section>
 
-button {
-    background: black;
-    color: white;
-    border: none;
-    padding: 12px;
-    cursor: pointer;
-}
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Feel free to get in touch for any inquiries or project requests!</p>
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1a1a1a;
-    color: white;
-    margin-top: 40px;
-}
+        <form action="https://formsubmit.co/amunieb@gmail.com" method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
 
-/* --- RESPONSIVE BREAKPOINTS --- */
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
 
-/* Tablets */
-@media (max-width: 900px) {
-    .content-grid {
-        flex-direction: column;
-        text-align: center;
-    }
-}
+            <label>Contact Number:</label>
+            <input type="tel" name="Contact" placeholder="Enter your contact number" required>
 
-/* Phones */
-@media (max-width: 700px) {
+            <label>Your Message:</label>
+            <textarea name="message" required></textarea>
 
-    nav ul {
-        flex-direction: column;
-        background: #222;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 180px;
-        padding: 15px;
-        display: none;
-    }
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    nav.open ul {
-        display: block;
-    }
+    <footer>
+        <p>Email us at: <i>hr@shasha-it.com</i></p>
+        <p>&copy; 2024 SHSHA Soft Cons Inc. All rights reserved.</p>
+    </footer>
 
-    .menu-toggle {
-        display: block;
-        color: white;
-    }
-}
+<script>
+document.getElementById("menu-toggle").onclick = function () {
+    document.getElementById("nav").classList.toggle("open");
+};
+</script>
+
+</body>
+</html>
